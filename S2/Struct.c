@@ -1,22 +1,22 @@
 #include <stdio.h>
 
-typedef struct segitiga
+struct segitiga
 {
     float alas;
     float tinggi;
     float luas;
-} Segitiga;
+};
 
 int main()
 {
     int length;
-    printf("Berapa Segitiga : ");
+    printf("Berapa segitiga : ");
     scanf("%d", &length);
-    Segitiga segitigaAry[length];
+    struct segitiga segitigaAry[length];
 
     for (int i = 0; i < length; i++)
     {
-        Segitiga newSegitiga;
+        struct segitiga newSegitiga;
         printf("\nSegitiga %d\n", i + 1);
         printf("Masukan Alas : ");
         scanf("%f", &newSegitiga.alas);
@@ -32,7 +32,7 @@ int main()
 
     for (int i = 0; i < length; i++)
     {
-        Segitiga temp;
+        struct segitiga temp;
         for (int j = 0; j < length - 1 - i; j++)
         {
             if (segitigaAry[j].luas > segitigaAry[j + 1].luas)
@@ -47,7 +47,7 @@ int main()
 
     for (int i = 0; i < length; i++)
     {
-        printf("%.1f x %.1f = %.1f\n", segitigaAry[i].alas, segitigaAry[i].tinggi, segitigaAry[i].luas);
+        printf("(%.1f x %.1f) / 2 = %.1f\n", segitigaAry[i].alas, segitigaAry[i].tinggi, segitigaAry[i].luas);
     }
 
     return 0;

@@ -1,3 +1,12 @@
+# Extender
+*.pdf
+*.docx
+*.json
+*.xml
+*.jpg
+*.png
+*.pptx
+
 # Prerequisites
 *.d
 
