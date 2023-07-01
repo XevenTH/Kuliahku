@@ -137,7 +137,7 @@ void DeleteLast(ListInt *l, address p)
     }
 }
 
-void DeleteAfter(ListInt *l, address p, int cari)
+void Delete(ListInt *l, address p, int cari)
 {
     p = l->first;
     if ((l->first != NULL) && (l->last != NULL))
@@ -165,7 +165,7 @@ void DeleteAfter(ListInt *l, address p, int cari)
                 }
                 else if (p == l->last)
                 {
-                    deleteLast(l, p);
+                    DeleteLast(l, p);
                 }
                 else
                 {
@@ -177,18 +177,18 @@ void DeleteAfter(ListInt *l, address p, int cari)
     }
 }
 
-void Print(ListInt l)
+void Print(ListInt *l)
 {
     printf("Isi List : ");
 
-    if (l.first == NULL)
+    if (l->first == NULL)
     {
         printf("[]");
     }
     else
     {
-        address curent = l.first;
-        while (curent->next != l.first)
+        address curent = l->first;
+        while (curent->next != l->first)
         {
             printf("[%d] ", curent->info);
             curent = curent->next;
@@ -200,7 +200,7 @@ void Print(ListInt l)
 int main()
 {
     ListInt l;
-    createlist(&l);
+    CreateList(&l);
 
     address p;
     int isi, pilihan;
@@ -210,13 +210,13 @@ int main()
     {
         system("cls");
         printf("---------- Program Circular List ----------\n\n");
-        cetak_list(l);
+        Print(&l);
         printf("\n\n1. Insert First");
         printf("\n2. Insert Last");
         printf("\n3. Insert After");
         printf("\n4. Delete First");
         printf("\n5. Delete Last");
-        printf("\n6. Delete After");
+        printf("\n6. Delete");
         printf("\n7. Traversal");
         printf("\n8. Keluar");
         printf("\n\nMasukkan Pilihan : ");
@@ -226,14 +226,14 @@ int main()
             printf("Masukkan Angka : ");
             scanf("%d", &isi);
             p = Create(isi);
-            InsertFirst(&l, p);
+            First(&l, p);
         }
         else if (pilihan == 2)
         {
             printf("Masukkan Angka : ");
             scanf("%d", &isi);
-            p = createlm(isi);
-            InsertLast(&l, p);
+            p = Create(isi);
+            Last(&l, p);
         }
         else if (pilihan == 3)
         {
@@ -242,7 +242,7 @@ int main()
             int sebelum;
             printf("Masukkan Angka Sebelumnya : ");
             scanf("%d", &sebelum);
-            p = createlm(isi);
+            p = Create(isi);
             InsertAfter(&l, p, sebelum);
         }
         else if (pilihan == 4)
@@ -258,27 +258,13 @@ int main()
             int cari;
             printf("Masukkan angka yang ingin dihapus : ");
             scanf("%d", &cari);
-            DeleteAfter(&l, p, cari);
+            Delete(&l, p, cari);
         }
         else if (pilihan == 7)
         {
             printf("\nTraversal List : ");
 
-            if (l.first == NULL)
-            {
-                printf("[ ]");
-            }
-            else
-            {
-                address curent = l.last;
-                while (curent->prev != l.last)
-                {
-                    printf("[%d] ", curent->info);
-                    curent = curent->prev;
-                }
-                printf("[%d] ", curent->info);
-            }
-            printf("\n\n");
+            Print(&l);
             system("pause");
         }
         else if (pilihan == 8)
