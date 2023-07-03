@@ -74,6 +74,8 @@ void Swap(Node *a, Node *b)
         return;
     Node *ap = a->prev, *an = a->next;
     Node *bp = b->prev, *bn = b->next;
+
+    // Jika b Berada Disebelah Kana a
     if (an == b)
     {
         a->next = bn;
@@ -83,6 +85,7 @@ void Swap(Node *a, Node *b)
         ap->next = b;
         bn->prev = a;
     }
+    // Jika b Merupakan Tail dan A Merupakan Head
     else if (bn == a)
     {
         a->next = b;
@@ -92,6 +95,7 @@ void Swap(Node *a, Node *b)
         bp->next = a;
         an->prev = b;
     }
+    // Jika b Dan a Bersebrangan
     else
     {
         a->next = bn;
