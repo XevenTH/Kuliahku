@@ -24,14 +24,17 @@ void SubsekuenCheck(char *strAry, char *current, int idx)
 
 int main()
 {
-    char Ary[100];
+    char Ary[50];
 
+    // Meminta string kepada user
     printf("Masukkan string: ");
     scanf("%s", Ary);
 
-    char current[100] = "";
+    // menteapkan nilai awal
+    char current[50] = "";
 
     printf("Subsekuen dari string %s adalah:\n", Ary);
+    //Menjalankan proses subsekuense
     SubsekuenCheck(Ary, current, 0);
 
     return 0;
