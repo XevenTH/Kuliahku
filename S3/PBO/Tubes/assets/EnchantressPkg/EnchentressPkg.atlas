@@ -1,0 +1,75 @@
+
+EnchentressPkg.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Attack1
+  rotate: false
+  xy: 1, 781
+  size: 1280, 128
+  orig: 1280, 128
+  offset: 0, 0
+  index: 4
+Jump
+  rotate: false
+  xy: 1, 651
+  size: 1024, 128
+  orig: 1024, 128
+  offset: 0, 0
+  index: -1
+Run
+  rotate: false
+  xy: 1, 521
+  size: 1024, 128
+  orig: 1024, 128
+  offset: 0, 0
+  index: -1
+Walk
+  rotate: false
+  xy: 1, 391
+  size: 1024, 128
+  orig: 1024, 128
+  offset: 0, 0
+  index: -1
+Attack2
+  rotate: false
+  xy: 1, 261
+  size: 768, 128
+  orig: 768, 128
+  offset: 0, 0
+  index: 1
+Dead
+  rotate: false
+  xy: 1283, 781
+  size: 640, 128
+  orig: 640, 128
+  offset: 0, 0
+  index: -1
+Idle
+  rotate: false
+  xy: 1027, 651
+  size: 640, 128
+  orig: 640, 128
+  offset: 0, 0
+  index: -1
+Attack3
+  rotate: false
+  xy: 1, 131
+  size: 384, 128
+  orig: 384, 128
+  offset: 0, 0
+  index: 2
+Attack4
+  rotate: false
+  xy: 1027, 521
+  size: 384, 128
+  orig: 384, 128
+  offset: 0, 0
+  index: 3
+Hurt
+  rotate: false
+  xy: 1, 1
+  size: 256, 128
+  orig: 256, 128
+  offset: 0, 0
+  index: -1

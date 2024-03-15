@@ -1,0 +1,82 @@
+
+PlantPkg.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Disguise
+  rotate: false
+  xy: 1, 781
+  size: 1408, 128
+  orig: 1408, 128
+  offset: 0, 0
+  index: -1
+Cloud_posion
+  rotate: false
+  xy: 1, 651
+  size: 1152, 128
+  orig: 1152, 128
+  offset: 0, 0
+  index: -1
+Walk
+  rotate: false
+  xy: 1, 521
+  size: 1152, 128
+  orig: 1152, 128
+  offset: 0, 0
+  index: -1
+Attack
+  rotate: false
+  xy: 1, 391
+  size: 1024, 128
+  orig: 1024, 128
+  offset: 0, 0
+  index: 3
+Attack_Disquise
+  rotate: false
+  xy: 1, 261
+  size: 896, 128
+  orig: 896, 128
+  offset: 0, 0
+  index: -1
+Poison
+  rotate: false
+  xy: 1, 131
+  size: 896, 128
+  orig: 896, 128
+  offset: 0, 0
+  index: -1
+Attack
+  rotate: false
+  xy: 1, 1
+  size: 768, 128
+  orig: 768, 128
+  offset: 0, 0
+  index: 1
+Hurt
+  rotate: false
+  xy: 1411, 781
+  size: 384, 128
+  orig: 384, 128
+  offset: 0, 0
+  index: -1
+Attack
+  rotate: false
+  xy: 1155, 651
+  size: 640, 128
+  orig: 640, 128
+  offset: 0, 0
+  index: 2
+Idle
+  rotate: false
+  xy: 1155, 521
+  size: 640, 128
+  orig: 640, 128
+  offset: 0, 0
+  index: -1
+Dead
+  rotate: false
+  xy: 1027, 391
+  size: 256, 128
+  orig: 256, 128
+  offset: 0, 0
+  index: -1

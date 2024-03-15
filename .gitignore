@@ -6,6 +6,8 @@
 *.jpg
 *.png
 *.pptx
+*.class
+*.rar
 
 # Prerequisites
 *.d
