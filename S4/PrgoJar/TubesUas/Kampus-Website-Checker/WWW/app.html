@@ -121,8 +121,8 @@
                 intervals: [],
                 fetchData() {
                     Promise.all([
-                        fetch("/api/website").then(response => response.json()),
-                        fetch("/api/status").then(response => response.json()),
+                        fetch("https://showcase.ittsby.id/IF24-Progjar/kelompok6/api/website").then(response => response.json()),
+                        fetch("https://showcase.ittsby.id/IF24-Progjar/kelompok6/api/status").then(response => response.json()),
                     ])
                     .then(([websites, status]) => {
                         this.statuses = websites.data.map(site => ({
